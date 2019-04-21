@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<bean id="person" class="com.suraj.spring.beans.Person">
+		<property name="id" value="1001" />
+		<property name="name" value="suraj singh" />
+		<property name="gender" value="male" />
+	</bean>
+	
+	<bean id="employee" class="com.suraj.spring.beans.Employee" parent="person">
+		<property name="name" value="Suraj S" />
+		<property name="panNum" value="DXC1749P"></property>
+	</bean>
+</beans>
